@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="/style.css" />
+
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+  <div class="container-fluid compass">
+    <a class="navbar-brand" href="/listings" class="icon"><i class="fa-regular fa-compass"></i></a>
+    <a class="nav-link wanderlust" href="/listings"><b>Wanderlust</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav ms-auto bg-opacity-75">
+        <form class="d-flex" role="search" action="/listings/search" method="get">
+          <input 
+          class="form-control me-2 search-inp"
+           type="search"
+            placeholder="Search destinations" 
+            aria-label="Search"
+             name="location">
+          <button class="btn search-btn" type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>Search</button>
+        </form>    
+      </div>
+
+      <div class="navbar-nav ms-auto bg-light p-2 bg-opacity-75" >
+        <a class="nav-link " href="/listings/new"><b>Add New Place</b></a>
+        <% if(!currUser) { %>
+          <a class="nav-link"  href="/signup"><b>Sign up</b></a>
+          <a class="nav-link" href="/login"><b>Login</b></a>
+        <% } %>
+        <% if(currUser) { %> 
+        <a class="nav-link" href="/logout"><b>Logout</b></a>
+        <% } %>
+      </div>
+      
+    </div>
+  </div>
+</nav>
