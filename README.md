@@ -25,8 +25,6 @@ Wanderlust is a web application designed for travel enthusiasts to explore new d
   - Bootstrap (CSS framework for responsive design)
 - **Image Storage:**
   - Cloudinary (cloud-based image storage and management)
-- **Maps:**
-  - TomTom (API for interactive maps)
 - **Error Handling:**
   - Custom error handling for a seamless user experience
 - **Other Libraries and Tools:**
